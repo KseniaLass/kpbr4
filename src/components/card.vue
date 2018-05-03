@@ -1,5 +1,6 @@
 <template>
 	<div class="card">
+		{{currentNumbers}}
 		<table class="card__sale">
 			<thead>
 				<tr>
@@ -23,8 +24,22 @@
 </template>
 
 <script>
+	import {mapGetters} from 'vuex';
 	export default {
-
+		props: {
+			pair: {
+				type: String,
+				required: true
+			}
+		},
+		computed: {
+			...mapGetters({
+				numberList: 'cards/getNumbersByPair'
+			}),
+			currentNumbers() {
+				return this.numberList(this.pair)
+			}
+		}
 	}
 </script>
 

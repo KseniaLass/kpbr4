@@ -29,11 +29,16 @@ body {
 }
 
 .wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-
 	padding:20px;
+}
+
+.container {
+	margin: 0 -1%;
+}
+
+.col-3 {
+	width:33%;
+	margin: 0 1%;
 }
 
 h1, h2 {

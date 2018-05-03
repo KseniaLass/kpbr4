@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import CardList from './components/cardList';
+import CardList from './pages/cardList';
 
 import {store} from './store';
 
