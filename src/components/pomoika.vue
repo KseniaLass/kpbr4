@@ -131,7 +131,7 @@
 			text-align: left;
 		}
 		&__block {
-			height: 155px;
+			height: 160px;
 			overflow-y: auto;
 			overflow-x: hidden;
 		}

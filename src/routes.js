@@ -9,12 +9,8 @@ import {store} from './store';
 
 const routes = [
 	{
-		path:'',
-		redirect: {name: 'list'}
-	},
-	{
 		name: 'list',
-		path: '/list',
+		path: '',
 		component: CardList,
 		beforeEnter(from, to, next) {
 			store.dispatch('cards/loadItems');
