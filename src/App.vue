@@ -23,13 +23,14 @@ body {
 	color: #ffffff;font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
 }
 * {
 	box-sizing: border-box;
 }
 
 .wrapper {
-	padding:20px;
+	padding:20px 20px 0;
 }
 
 .container {

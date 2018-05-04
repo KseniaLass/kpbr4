@@ -23,7 +23,6 @@
 							</tr>
 						</tbody>
 					</table>
-					<hr>
 					<VueScrollbar class="pair__block">
 						<table class="pair__table table table_bids">
 							<tbody>
@@ -36,7 +35,6 @@
 							</tbody>
 						</table>
 					</VueScrollbar>
-					<hr>
 					<VueScrollbar class="pair__block">
 						<table class="pair__table table table_asks">
 							<tbody>
@@ -101,14 +99,15 @@
 <style lang="scss">
 	.pomoika {
 		border: 1px solid rgba(255, 255, 255, 0.05);
-		margin-bottom:30px;
+		margin-bottom: 27px;
+		height: calc(50vh - 38px);
 		&__header {
 			background: rgba(255, 255, 255, 0.05);
-			padding: 15px;
-			font-size: 20px;
+			padding: 10px 15px;
+			font-size: 18px;
 		}
 		&__body {
-			padding:15px;
+			padding:10px;
 			display: flex;
 			flex-flow: row wrap;
 			margin: 0 -1%;
@@ -121,25 +120,30 @@
 		border: 1px solid rgba(255, 255, 255, 0.05);
 		&__header {
 			background: rgba(255, 255, 255, 0.05);
-			padding:15px;
+			padding: 10px 15px;
+			font-size: 14px;
 		}
 		&__body {
-			padding: 15px;
+			padding: 10px;
 		}
 		&__table {
 			width: 100%;
 			text-align: left;
 		}
 		&__block {
-			height: 160px;
+			height: 141px;
 			overflow-y: auto;
 			overflow-x: hidden;
+			&:nth-child(2) {
+				border-bottom:1px solid rgba(255, 255, 255, 0.05);
+			}
 		}
 	}
 
 	.table {
 		td {
 			width:33.33%;
+			font-size: 14px;
 		}
 		&_head {
 			color: #7685a9;
