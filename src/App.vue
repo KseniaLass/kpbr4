@@ -33,15 +33,6 @@ body {
 	padding:20px 20px 0;
 }
 
-.container {
-	margin: 0 -1%;
-}
-
-.col-3 {
-	width:33%;
-	margin: 0 1%;
-}
-
 h1, h2 {
   font-weight: normal;
 	padding: 0;

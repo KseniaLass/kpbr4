@@ -13,7 +13,7 @@ const routes = [
 		path: '',
 		component: CardList,
 		beforeEnter(from, to, next) {
-			store.dispatch('cards/loadItems');
+			//store.dispatch('loadItems');
 			next();
 		}
 	}

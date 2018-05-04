@@ -73,21 +73,9 @@
 				required: true
 			}
 		},
-		data() {
-			return {
-				settings: {
-					maxScrollbarLength: 60
-				}
-			}
-		},
-		methods: {
-			scrollHanle(evt) {
-				console.log(evt)
-			}
-		},
 		computed: {
 			...mapGetters({
-				pomoikaList: 'cards/getPairByName'
+				pomoikaList: 'getPairByName'
 			}),
 			currentPairs() {
 				return this.pomoikaList(this.id)
@@ -100,7 +88,7 @@
 	.pomoika {
 		border: 1px solid rgba(255, 255, 255, 0.05);
 		margin-bottom: 27px;
-		height: calc(50vh - 38px);
+		min-height: calc(50vh - 38px);
 		&__header {
 			background: rgba(255, 255, 255, 0.05);
 			padding: 10px 15px;
@@ -110,13 +98,13 @@
 			padding:10px;
 			display: flex;
 			flex-flow: row wrap;
-			margin: 0 -1%;
+			margin: 0 -10px;
 		}
 	}
 
 	.pair {
-		width:33%;
-		margin: 0 1%;
+		min-width:20%;
+		margin: 0 10px;
 		border: 1px solid rgba(255, 255, 255, 0.05);
 		&__header {
 			background: rgba(255, 255, 255, 0.05);
